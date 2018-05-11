@@ -9,7 +9,7 @@ The data can be downloaded as follow:
 	wget "http://enigma.ini.usc.edu/wp-content/uploads/2012/07/HM3.bim.gz"
 	wget "http://enigma.ini.usc.edu/wp-content/uploads/2012/07/HM3.fam.gz"
 
-## Converting the data using Plink
+## Preprocessing the data using Plink
 Plink is a software for processing genetic data. It can be downloaded at: [http://zzz.bwh.harvard.edu/plink/](http://zzz.bwh.harvard.edu/plink/). Can be locally stored and used.
 
 For processing the data with the criteria mentioned by ENIGMA2, you muct follow (Example):
@@ -33,4 +33,8 @@ Do something I still do not understand:
 Antother weird step:
 
 	awk '{if(($5=="T" && $6=="A")||($5=="A" && $6=="T")||($5=="C" && $6=="G")||($5=="G" && $6=="C")) print $2, "ambig" ; else print $2 ;}' $datafile.bim | grep -v ambig > local.snplist.txt
+
+And another one
+	
+	pl
 

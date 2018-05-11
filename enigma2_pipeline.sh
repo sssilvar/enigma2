@@ -37,3 +37,4 @@ eval $CMD
 # Run the MDS analysis --- this step will take a while (approx. 1 day)
 MDS_FILE=${RAW_FILE}"mds"
 CMD=${PLINK}" --bfile "$MERGED_FILE" --cluster --mind 0.5 --mds-plot 4 --extract local.snplist.txt --noweb --out "${MDS_FILE}
+eval $CMD
