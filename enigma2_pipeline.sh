@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Set up parameters
-WORKDIR=/data/epione/user/ssilvari/enigma/enigma2_test
-RAW_FILE=HM3
+WORKDIR=/data/epione/user/ssilvari/enigma/ADNI_1_GWAS_Plink
+RAW_FILE=ADNI_cluster_01_forward_757LONI
 
 # Other params
 RAW_FILE=${WORKDIR}/${RAW_FILE}
